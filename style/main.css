@@ -1,0 +1,99 @@
+:root {
+    --MedSpringGreen: #00FA9A;
+    --preto: #141414;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*Limita os elementos a borda da caixa definida*/
+}
+
+body {
+    background: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: #fff;
+    margin-left: 15px;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--MedSpringGreen);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/*Filme principal*/
+.filme-principal {
+    font-size: 16px;
+    background-image: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('../img/capa-polvo.jpg');
+    
+    height: 400px;
+    background-size: cover;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: #fff;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel-filmes {
+    margin-top: 5px;
+}
